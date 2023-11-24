@@ -5,9 +5,9 @@
         width: auto;
     }
 
-    .left__item-title{
+    /* .left__item-title{
         width: auto;
-    }
+    } */
 }
 @media (max-width: 1199.99px){
     .header__nav{
@@ -34,15 +34,15 @@
 
 
     .nav__menu:hover .header__nav-list {
-            margin-top: 40px;
+            margin-top: 28px;
             top: 100%;
-            z-index: 4;
+            z-index: 6;
     }
 
-    .header__items{
+    /* .header__items{
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     /*  */
 
@@ -55,11 +55,49 @@
 
 @media (max-width: 991.99px){
 
+    .nav__search input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        border: none;
+        opacity: 0;
+        display: flex;
+        background: var(--cardColor);
+        transition: .5s;
+    }
+
+    .nav__search:hover input {
+        width: 100%;
+        opacity: 1;
+        border-radius: 15px;
+    }
+
+    
+
+    .nav__search button {
+        padding: 6px;
+        z-index: 4;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .header__right-item{
+        padding: 73px 0px 47px 0px;
+    }
+    
+    .header__items {
+        display: flex;
+        flex-direction: column;
+    }
 }
 @media (max-width: 767.99px){
     .header__nav-icons{
         position: absolute;
-        top: 110px;
+        top: 102px;
         left: 15px;
         
 
@@ -74,10 +112,27 @@
 }
 @media (max-width:575.99px){
 
+    .right__item-img{
+        transform: scale(0.6);
+    }
+    
+    .header__left-item-contents{
+        align-items: center;
+    }
+    .header__left-item-content{
+        align-items: center;
+    }
+    .header__right-item-content{
+        align-items: center;
+    }
+
+
     .header__left-item-two{
         display: flex;
         flex-direction: column;
         gap: 43px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .header__left-item{
         display: flex;
@@ -100,7 +155,7 @@
     }
 
     .header__right-item{
-        padding: 73px 73px 47px 119px;
+        padding: 73px 0px 47px 0px;
     }
 
     .header__right-item-content::after{
@@ -109,5 +164,8 @@
 
     .right__item-title {
         width: max-content; 
+    }
+    .liders__sells-title{
+        text-align: center;
     }
 }

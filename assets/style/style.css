@@ -53,6 +53,7 @@ body{
     display: flex;
     align-items: center;
     gap: 40px;
+    position: relative;
 }
 
 
@@ -126,15 +127,57 @@ body{
     align-items: center;
 }
 
+.nav__search {
+    display: flex;
+    gap: 4px;
+}
+
+.nav__search input {
+    padding: 6px 12px;
+    border: 1px solid #41A28E;
+    outline: none;
+    color: #4B4848;
+    font-size: 14px;
+    display: none;
+}
+
+.nav__search input::placeholder {
+    color: #4B4848;
+}
+
+.nav__search button {
+    /* padding: 0 7px;
+    background: #41A28E; */
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+
+.nav__search button:active {
+    transform: scale(.95);
+}
+
+
+
 
 .header__left-item{
+    overflow: hidden;
+    max-width: 526px;
+    width: 100%;
     position: relative;
-    padding: 73px 73px 47px 119px;
+    padding: 73px 0px 47px 0px;
     background: var(--cardColor);
 }
 
 .header__left-item-two{
-    /* max-width: max-content; */
+    max-width: 526px;
+    width: 100%;
+    justify-content: center;
     padding: 73px 73px 47px 119px;
     background: var(--cardColor);
 }
@@ -179,6 +222,7 @@ body{
 .header__left-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 43px;
     border-radius: 10px;
     position: relative;
@@ -282,10 +326,12 @@ body{
 
 
 .header__right-item{
-    max-width: max-content;
-    padding: 188px 100px 188px 110px;
+    max-width: 746px;
+    width: 100%;
+    /* padding: 188px 100px 188px 110px; */
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     border-radius: 10px;
     background: var(--cardColor);
@@ -327,12 +373,14 @@ body{
 .header__items{
     position: relative;
     display: flex;
+    justify-content: space-between;
     margin-top: 40px;
     gap: 24px;
 }
 
 .header__right-item{
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -378,5 +426,7 @@ body{
 .liders__sells-content{
    margin-top: 60px;
 }
+
+
 
 
